@@ -19,7 +19,7 @@ const clientImage = {
 
 const Clients = () => {
     return (
-        <div className="mt-8 bg-gray-100">
+        <div className="mt-8 bg-white">
             <section>
                 <div className="my-4 py-4">
                     <h2 className="my-2 text-center text-3xl uppercase title">Our Clients</h2>
