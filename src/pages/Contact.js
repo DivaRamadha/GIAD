@@ -1,80 +1,68 @@
 import React, { useState } from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
-import {useDocTitle} from '../components/CustomHook';
-import axios from 'axios';
-// import emailjs from 'emailjs-com';
+import { useDocTitle } from '../components/CustomHook';
+import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
 const Contact = () => {
     useDocTitle('MLD | Molad e Konsult - Send us a message')
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [message, setMessage] = useState('')
-    const [errors, setErrors] = useState([])
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+    const [errors, setErrors] = useState([]);
 
     const clearErrors = () => {
-        setErrors([])
-    }
+        setErrors([]);
+    };
 
     const clearInput = () => {
-        setFirstName('')
-        setLastName('')
-        setEmail('')
-        setPhone('')
-        setMessage('')
-    }
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
         document.getElementById('submitBtn').disabled = true;
         document.getElementById('submitBtn').innerHTML = 'Loading...';
-        let fData = new FormData();
-        fData.append('first_name', firstName)
-        fData.append('last_name', lastName)
-        fData.append('email', email)
-        fData.append('phone_number', phone)
-        fData.append('message', message)
+        setMessage(`First Name: ${firstName}, Last Name: ${lastName}, Email: ${email}, Phone Number: ${phone}, Message: ${message}`);
 
-        axios({
-            method: "post",
-            url: process.env.REACT_APP_CONTACT_API,
-            data: fData,
-            headers: {
-                'Content-Type':  'multipart/form-data'
-            }
-        })
-        .then(function (response) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            clearInput()
-            //handle success
-            Notiflix.Report.success(
-                'Success',
-                response.data.message,
-                'Okay',
-            );
-        })
-        .catch(function (error) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            //handle error
-            const { response } = error;
-            if(response.status === 500) {
-                Notiflix.Report.failure(
-                    'An error occurred',
-                    response.data.message,
+        const templateParams = {
+            to_name: "Diva",
+            from_name: firstName + " " + lastName,
+            email: email,
+            phone_number: phone,
+            message:  `Email : ${email}, Phone : ${phone}, Message: ${message}`,
+        };
+
+        emailjs.send('service_bzu8lc1', 'template_4ejeeeh', templateParams, 'Xry4WJyFJ2jpajvPv')
+            .then((response) => {
+                document.getElementById('submitBtn').disabled = false;
+                document.getElementById('submitBtn').innerHTML = 'Send Message';
+                clearInput();
+                Notiflix.Report.success(
+                    'Success',
+                    'Your message has been sent successfully!',
                     'Okay',
                 );
-            }
-            if(response.data.errors !== null) {
-                setErrors(response.data.errors)
-            }
-            
-        });
-    }
+            }, (error) => {
+                document.getElementById('submitBtn').disabled = false;
+                document.getElementById('submitBtn').innerHTML = 'Send Message';
+                // Handle error
+                console.error('Error sending email: ', error);
+                Notiflix.Report.failure(
+                    'An error occurred',
+                    'Failed to send your message. Please try again later.',
+                    'Okay',
+                );
+            });
+    };
+
     return (
         <>
             <div>
@@ -84,12 +72,9 @@ const Contact = () => {
                 <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
 
                 <form onSubmit={sendEmail}>
-
-                    <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-                        <div className="flex">
+                        <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                             <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">Send us a message</h1>
-                        </div>
-                        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                                 <div>
                                     <input 
                                         name="first_name" 
@@ -97,14 +82,13 @@ const Contact = () => {
                                         type="text" 
                                         placeholder="First Name*" 
                                         value={firstName}
-                                        onChange={(e)=> setFirstName(e.target.value)}
+                                        onChange={(e) => setFirstName(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
                                     {errors && 
                                         <p className="text-red-500 text-sm">{errors.first_name}</p>
                                     }
                                 </div>
-                                
                                 <div>
                                     <input 
                                         name="last_name" 
@@ -112,14 +96,13 @@ const Contact = () => {
                                         type="text" 
                                         placeholder="Last Name*"
                                         value={lastName}
-                                        onChange={(e)=> setLastName(e.target.value)}
+                                        onChange={(e) => setLastName(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
                                     {errors && 
                                         <p className="text-red-500 text-sm">{errors.last_name}</p>
                                     }
                                 </div>
-
                                 <div>
                                     <input 
                                         name="email"
@@ -127,14 +110,13 @@ const Contact = () => {
                                         type="email" 
                                         placeholder="Email*"
                                         value={email}
-                                        onChange={(e)=> setEmail(e.target.value)}
+                                        onChange={(e) => setEmail(e.target.value)}
                                         onKeyUp={clearErrors}   
                                     />
                                     {errors && 
                                         <p className="text-red-500 text-sm">{errors.email}</p>
                                     }
                                 </div>
-
                                 <div>
                                     <input
                                         name="phone_number" 
@@ -142,37 +124,37 @@ const Contact = () => {
                                         type="number" 
                                         placeholder="Phone*"
                                         value={phone}
-                                        onChange={(e)=> setPhone(e.target.value)}
+                                        onChange={(e) => setPhone(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
                                     {errors && 
                                         <p className="text-red-500 text-sm">{errors.phone_number}</p>
                                     }
                                 </div>
+                            </div>
+                            <div className="my-4">
+                                <textarea 
+                                    name="message" 
+                                    placeholder="Message*" 
+                                    className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    onKeyUp={clearErrors}
+                                ></textarea>
+                                {errors && 
+                                    <p className="text-red-500 text-sm">{errors.message}</p>
+                                }
+                            </div>
+                            <div className="my-2 w-1/2 lg:w-2/4">
+                                <button type="submit" id="submitBtn" className="uppercase text-sm tracking-wide bg-orange-500 hover:bg-orange-400 text-gray-100 p-3 rounded-lg w-full 
+                                        focus:outline-none focus:shadow-outline">
+                                    Send Message
+                                </button>
+                            </div>
                         </div>
-                        <div className="my-4">
-                            <textarea 
-                                name="message" 
-                                placeholder="Message*" 
-                                className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                value={message}
-                                onChange={(e)=> setMessage(e.target.value)}
-                                onKeyUp={clearErrors}
-                            ></textarea>
-                            {errors && 
-                                <p className="text-red-500 text-sm">{errors.message}</p>
-                            }
-                        </div>
-                        <div className="my-2 w-1/2 lg:w-2/4">
-                            <button type="submit" id="submitBtn" className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                                    focus:outline-none focus:shadow-outline">
-                                Send Message
-                            </button>
-                        </div>
-                </div>
-                </form>
+                    </form>
                         <div
-                            className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
+                            className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-orange-900 rounded-2xl">
                             <div className="flex flex-col text-white">
                                 
                                 <div className="flex my-4 w-2/3 lg:w-3/4">
@@ -181,7 +163,7 @@ const Contact = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h2 className="text-2xl">Office Address</h2>
-                                        <p className="text-gray-400">Ilo Awela, Ota, Ogun State</p>
+                                        <p className="text-white-400">West Jakarta, Indonesia</p>
                                     </div>
                                 </div>
                     
@@ -192,11 +174,11 @@ const Contact = () => {
 
                         <div className="flex flex-col">
                         <h2 className="text-2xl">Call Us</h2>
-                        <p className="text-gray-400">Tel: 08055384406</p>
+                        <p className="text-white-400">Tel: +62 812-9045-3530</p>
                         
                             <div className='mt-5'>
                                 <h2 className="text-2xl">Send an E-mail</h2>
-                                <p className="text-gray-400">info@mld.ng</p>
+                                <p className="text-white-400">hipos1707@gmail.com</p>
                             </div>
                        
                         </div>
