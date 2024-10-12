@@ -10,6 +10,7 @@ import {
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import About from './pages/About';
 import DemoProduct from './pages/DemoProduct';
 
 import {useDocTitle} from './components/CustomHook';
@@ -30,7 +31,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("GIAD | Molad e Konsult - Bespoke Web and Mobile Applications");
+  useDocTitle("GIAD Technology | Bespoke Web and Mobile Applications");
 
   return (
     <>
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
+            <Route path="/about" element={<About />} /> 
           </Routes>
         </ScrollToTop>
       </Router>

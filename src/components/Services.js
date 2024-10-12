@@ -88,7 +88,7 @@ const Services = () => {
                             </div>
                             <h3 className="text-3xl  text-orange-500 title">Development & Progress Update</h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 subtitle'>Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.</p>
+                                <p className='my-3 text-xl text-gray-600 subtitle'>Once we agree on the plan, we cue my lofi playlist and dive into coding. From initial sketches to polished code, we keep you updated every step of the way.</p>
                             </div>
                         </div>
                         <div className="lg:w-1/3 flex flex-col lg:mx-4 justify-center">
@@ -97,7 +97,7 @@ const Services = () => {
                             </div>
                             <h3 className="text-3xl  text-blue-900 title">Development & Launch</h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 subtitle'>This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your application from the ground up.</p>
+                                <p className='my-3 text-xl text-gray-600 subtitle'>This is where the magic happens! Based on the approved design, we'll translate everything into functional code, building your application from the ground up.</p>
                             </div>
                         </div>
                     </div>

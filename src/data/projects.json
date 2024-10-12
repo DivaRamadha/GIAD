@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "https://picsum.photos/200/300",
+        "title": "Nabila",
+        "description": "Nabila is a mobile app that has been downloaded by more than 10,000 users, with a rating of 4.7 out of 5 stars from over 4,000 users. The app is designed to provide a convenient and user-friendly experience for its customers. With its clean and modern design, Nabila is perfect for anyone looking for a reliable and efficient way to manage their daily activities."
+    },
+    {
+        "id": 2,
+        "image": "https://picsum.photos/200/301",
+        "title": "Pusat Investasi Pemerintah",
+        "description": "We develop website application for institutions, companies, and organizations. We provide them with a modern and user-friendly platform to manage their operations, automate processes, and improve communication between employees, customers, and partners. "
+    },
+    {
+        "id": 3,
+        "image": "https://picsum.photos/200/300",
+        "title": "Praktis POS",
+        "description": "Our Mobile Web and Tablet POS Application is designed for businesses and organizations to manage their sales operations effectively. It offers a user-friendly interface and can integrate with existing systems through well-structured APIs. With this system in place, you enjoy benefits such as: increased accuracy in sales operations."
+    },
+    {
+        "id": 4,
+        "image": "https://picsum.photos/200/301",
+        "title": "AktaCorp",
+        "description": "Our company registration system helps to manage the process of establishing a company, whether PT (Limited Liability Company), CV (Limited Partnership), or any other type of business entity. With an easily customizable menu, you get to define your user experience and make your company registration process fully customizable and memorable."
+    }
+]
