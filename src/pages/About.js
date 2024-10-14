@@ -13,7 +13,7 @@ const About = () => {
         {
             name: 'Ihsan Muafa Luthfi',
             // role: 'Expert on Web Development and Project Management', 
-            description: 'Founder and chief visionary, Ihsan began his career as an Engineer at IT consultancy in Jakarta in 2010. Today, He is a Senior Software Engineer at a Big Indonesian company, continually advancing in the ever-evolving digital landscape to drive better technology.',
+            description: 'Founder and strategic leader, Ihsan began his career as a Software Engineer at an IT consultancy in Jakarta. With extensive experience, he has transitioned into various leadership roles, including Project Manager and business owner. Currently serving as a Senior Software Engineer at a leading Indonesian company, he continues to leverage his technical expertise and leadership skills to drive innovation and enhance digital solutions, staying at the forefront of the rapidly evolving tech industry.',
             image:  simas // Ganti dengan link gambar
         },
         {
@@ -39,7 +39,7 @@ const About = () => {
     const advisor = {
         name: 'Tommy Lukman',
         role: 'Commissioner / Senior Advisor',
-        description: 'More than 20 years of experience in IT development. Graduated from Oklahoma State University with a Bachelor\'s degree in Electrical and Electronics Engineering in 1990 and continued his education in Master of Information Technology at University of Indonesia in 2010. He provides guidance and support to the team.',
+        description: 'Having worked for international corporations for more than 20 years, has a track record of creating, managing, and overseeing high-achieving IT teams. Technical and leadership expertise are bolstered by certifications in information security (ISO 27001:2022) and insurance (AAAIJ and AIIS), the latter of which was approved by the British Standard Institution in 2023. They are an essential asset to every firm, dedicated to fostering innovation and guaranteeing operational excellence through strategic IT solutions.',
         image:  simas // Ganti dengan link gambar
     };
 
