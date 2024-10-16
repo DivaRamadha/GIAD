@@ -33,6 +33,7 @@
     "title": "AktaCorp",
     "location": "Jakarta, Indonesia",
     "category": "Web",
+    "company": "AktaCorp",
     "description": "Our company registration system helps to manage the process of establishing a company, whether PT (Limited Liability Company), CV (Limited Partnership), or any other type of business entity. With an easily customizable menu, you get to define your user experience and make your company registration process fully customizable and memorable."
   },
   {
@@ -41,6 +42,7 @@
     "title": "DjuBli",
     "location": "Jakarta, Indonesia",
     "category": "Mobile",
+    "company": "PT Bintang Phoenix Sakti",
     "description": "Developed a car marketplace application that facilitates buying and selling vehicles. The app allows users to view market prices for specific car models, participate in auctions, and negotiate prices. Key features include a comprehensive car listing database, real-time price tracking, secure payment processing, and a user-friendly interface for seamless transactions."
   },
   {
@@ -49,6 +51,7 @@
     "title": "AhaChat",
     "location": "Vietnam",
     "category": "Software Testing",
+    "company": "AhaChat Co.,Ltd",
     "description": "The manual testing of the Ahachat chatbot application successfully identified critical issues and areas for enhancement. By thoroughly validating functionality and user experience, the team was able to launch a more reliable and user-friendly product. The chatbot now effectively engages customers, helping businesses improve their marketing efforts and customer satisfaction."
   },
   {
@@ -75,6 +78,7 @@
     "title": "Infirmary",
     "location": "Jakarta, Indonesia",
     "category": "Web & Mobile",
+    "company": "Infirmary",
     "description": "A health application featuring a chatbot-based algorithm for disease diagnosis. The app allows users to input symptoms via chat and receive automated responses based on the algorithm's analysis. It provides users with preliminary information about potential illnesses, aiding in self-assessment and initial decision-making regarding medical concerns."
   },
   
@@ -92,7 +96,7 @@
     "image": "/assets/coco.png",
     "title": "Budget Planning BT Cocoa",
     "location": "Jakarta, Indonesia",
-    "category": "Software Testing",
+    "category": "Web",
     "company": "PT. Bumi Tangerang Mesindotama",
     "description": "Budget Planning Project has enabled PT. Bumi Tangerang Mesindotama (BTCOCOA) to enhance its financial management processes significantly. Departments can now create and manage budgets more effectively, leading to improved financial discipline and accountability. The reporting tools provide valuable insights, allowing management to make informed decisions based on real-time data."
   },
@@ -101,7 +105,7 @@
     "image": "/assets/sftp.jpeg",
     "title": "Automation of file download",
     "location": "Jakarta, Indonesia",
-    "category": "Web",
+    "category": "Business Workflow Automation",
     "company": "PT Bahana Sysfo Utama",
     "description": "Automation of file downloads and transfers via SFTP has greatly improved operational efficiency for the organization. By minimizing time spent on manual file management, employees can focus on more strategic tasks. Strong error handling and logging mechanisms also enhance the reliability of the process, ensuring that critical files are transferred securely and accurately."
   }
