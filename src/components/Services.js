@@ -3,6 +3,8 @@ import img from '../images/web.svg';
 import img2 from '../images/mobile.svg';
 import img3 from '../images/pm.svg';
 import img4 from '../images/consultation.svg';
+import audit from '../images/audit.svg';
+import design from '../images/design.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
@@ -61,6 +63,47 @@ const Services = () => {
                                     <h2 className="my-4 text-2xl text-center ">General IT Consultations</h2>
                                     <p className="text-md">
                                         Our IT consultations service provides expert guidance and support for businesses and individuals looking to optimize their technology solutions.
+                                    </p>
+                                </div>
+                            </div>                    
+                        </div>
+                        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                                <div className="m-2 text-justify text-sm">
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out h-[200px]" src={audit} />
+                                    <h2 className="my-4 text-2xl text-center">IT Audit</h2>
+                                    <p className="text-md ">
+                                        We provide professional IT audit services to help organizations evaluate the effectiveness of their IT systems, identify potential security risks, and improve overall IT governance. Our IT audit services include IT risk assessment, IT control evaluation, and IT security audit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                                <div className="m-2 text-justify text-sm">
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out h-[200px]" src={img2} />
+                                    <h2 className="my-4 text-2xl text-center">Software Testing Services</h2>
+                                    <p className="text-md">
+                                        Our software testing services ensure that your product meets the highest standards of quality, performance, and security. We provide comprehensive testing solutions, from unit testing to user acceptance testing, to ensure that your software is reliable, efficient, and user-friendly.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                                <div className="m-2 text-justify text-sm">
+                                    <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out h-[200px]" src={img3} />
+                                    <h2 className="my-4 text-2xl text-center ">Business Workflow Automation</h2>
+                                    <p className="text-md">
+                                    Automate your business workflows with our custom solutions, streamlining processes, reducing costs, and increasing efficiency. From document approval to customer onboarding, we'll help you find the bottlenecks and optimize your operations for maximum ROI.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                                <div className="m-2 text-justify text-sm">
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out h-[200px]" src={design} />
+                                    <h2 className="my-4 text-2xl text-center ">Design</h2>
+                                    <p className="text-md">
+                                    Bring your vision to life with our creative design services, delivering innovative and visually compelling solutions that resonate with your audience.
                                     </p>
                                 </div>
                             </div>                    
