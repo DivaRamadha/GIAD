@@ -1,68 +1,103 @@
 [
-    {
-        "id": 1,
-        "image": "/assets/nabila.png",
-        "title": "Nabila",
-        "location": "Jakarta, Indonesia",
-        "category": "Mobile",
-        "description": "Nabila is a mobile app that has been downloaded by more than 10,000 users, with a rating of 4.7 out of 5 stars from over 4,000 users. The app is designed to provide a convenient and user-friendly experience for its customers. With its clean and modern design, Nabila is perfect for anyone looking for a reliable and efficient way to manage their daily activities."
-    },
-    {
-        "id": 2,
-        "image": "/assets/pip.png",
-        "title": "PIP Project",
-        "location": "Jakarta, Indonesia",
-        "category": "Web",
-        "description": "We develop website application for institutions, companies, and organizations. We provide them with a modern and user-friendly platform to manage their operations, automate processes, and improve communication between employees, customers, and partners. "
-    },
-   
-    {
-        "id": 3,
-        "image": "/assets/praktispos.png",
-        "title": "Praktis POS",
-        "location": "Jakarta, Indonesia",
-        "category": "Mobile",
-        "description": "Developed a Point of Sales (POS) application using Flutter, supporting offline transactions. This application has thousands of active users and has processed transactions of almost 2 billion rupiah in one month from merchants registered on the app. Key features include offline transaction support, inventory management, detailed sales reports, etc."
-    },
-    {
-        "id": 4,
-        "image": "/assets/akta.png",
-        "title": "AktaCorp",
-        "location": "Jakarta, Indonesia",
-        "category": "Web",
-        "description": "Our company registration system helps to manage the process of establishing a company, whether PT (Limited Liability Company), CV (Limited Partnership), or any other type of business entity. With an easily customizable menu, you get to define your user experience and make your company registration process fully customizable and memorable."
-    },
-    {
-        "id": 5,
-        "image": "/assets/dju.png",
-        "title": "DjuBli",
-        "location": "Jakarta, Indonesia",
-        "category": "Mobile",
-        "description": "Developed a car marketplace application that facilitates buying and selling vehicles. The app allows users to view market prices for specific car models, participate in auctions, and negotiate prices. Key features include a comprehensive car listing database, real-time price tracking, secure payment processing, and a user-friendly interface for seamless transactions."
-    },
-    {
-        "id": 6,
-        "image": "/assets/apb.png",
-        "title": "APB Project",
-        "location": "Jakarta, Indonesia",
-        "category": "Mobile",
-        "description": "Developed a goods delivery application for internal company drivers for tracking and managing their production."
-    },
-    {
-        "id": 7,
-        "image": "/assets/sis.png",
-        "title": "Siswamedia",
-        "location": "Jakarta, Indonesia",
-        "category": "Mobile",
-        "description": "An interactive school management application that prioritizes user aspects of the application, has superior features such as child development reports."
-    },
-    {
-        "id": 8,
-        "image": "/assets/inf.png",
-        "title": "Infirmary",
-        "location": "Jakarta, Indonesia",
-        "category": "Web & Mobile",
-        "description": "A health application featuring a chatbot-based algorithm for disease diagnosis. The app allows users to input symptoms via chat and receive automated responses based on the algorithm's analysis. It provides users with preliminary information about potential illnesses, aiding in self-assessment and initial decision-making regarding medical concerns."
-    }
-    
+  {
+    "id": 1,
+    "image": "/assets/nabila.png",
+    "title": "Nabila",
+    "location": "Jakarta, Indonesia",
+    "category": "Mobile",
+    "company": "PT Narindo Solusi Telekomunikasi",
+    "description": "Nabila is a mobile app that has been downloaded by more than 10,000 users, with a rating of 4.7 out of 5 stars from over 4,000 users. The app is designed to provide a convenient and user-friendly experience for its customers. With its clean and modern design, Nabila is perfect for anyone looking for a reliable and efficient way to manage their daily activities."
+  },
+  {
+    "id": 2,
+    "image": "/assets/pip.png",
+    "title": "PIP Project",
+    "location": "Jakarta, Indonesia",
+    "category": "Web",
+    "company": "PT Bayarind Artha Internusa",
+    "description": "We develop website application for institutions, companies, and organizations. We provide them with a modern and user-friendly platform to manage their operations, automate processes, and improve communication between employees, customers, and partners. "
+  },
+
+  {
+    "id": 3,
+    "image": "/assets/praktispos.png",
+    "title": "Praktis POS",
+    "location": "Jakarta, Indonesia",
+    "category": "Mobile",
+    "company": "PT Sinar Mas Multiartha, tbk",
+    "description": "Developed a Point of Sales (POS) application using Flutter, supporting offline transactions. This application has thousands of active users and has processed transactions of almost 2 billion rupiah in one month from merchants registered on the app. Key features include offline transaction support, inventory management, detailed sales reports, etc."
+  },
+  {
+    "id": 4,
+    "image": "/assets/akta.png",
+    "title": "AktaCorp",
+    "location": "Jakarta, Indonesia",
+    "category": "Web",
+    "description": "Our company registration system helps to manage the process of establishing a company, whether PT (Limited Liability Company), CV (Limited Partnership), or any other type of business entity. With an easily customizable menu, you get to define your user experience and make your company registration process fully customizable and memorable."
+  },
+  {
+    "id": 5,
+    "image": "/assets/dju.png",
+    "title": "DjuBli",
+    "location": "Jakarta, Indonesia",
+    "category": "Mobile",
+    "description": "Developed a car marketplace application that facilitates buying and selling vehicles. The app allows users to view market prices for specific car models, participate in auctions, and negotiate prices. Key features include a comprehensive car listing database, real-time price tracking, secure payment processing, and a user-friendly interface for seamless transactions."
+  },
+  {
+    "id": 9,
+    "image": "/assets/ahchat.png",
+    "title": "AhaChat",
+    "location": "Vietnam",
+    "category": "Software Testing",
+    "description": "The manual testing of the Ahachat chatbot application successfully identified critical issues and areas for enhancement. By thoroughly validating functionality and user experience, the team was able to launch a more reliable and user-friendly product. The chatbot now effectively engages customers, helping businesses improve their marketing efforts and customer satisfaction."
+  },
+  {
+    "id": 6,
+    "image": "/assets/apb.png",
+    "title": "APB Project",
+    "location": "Jakarta, Indonesia",
+    "category": "Mobile",
+    "description": "Developed a goods delivery application for internal company drivers for tracking and managing their production."
+  },
+  {
+    "id": 7,
+    "image": "/assets/sis.png",
+    "title": "Siswamedia",
+    "location": "Jakarta, Indonesia",
+    "category": "Mobile",
+    "description": "An interactive school management application that prioritizes user aspects of the application, has superior features such as child development reports."
+  },
+  {
+    "id": 8,
+    "image": "/assets/inf.png",
+    "title": "Infirmary",
+    "location": "Jakarta, Indonesia",
+    "category": "Web & Mobile",
+    "description": "A health application featuring a chatbot-based algorithm for disease diagnosis. The app allows users to input symptoms via chat and receive automated responses based on the algorithm's analysis. It provides users with preliminary information about potential illnesses, aiding in self-assessment and initial decision-making regarding medical concerns."
+  },
+  
+  {
+    "id": 12,
+    "image": "/assets/prima.jpeg",
+    "title": "File Inventory Management",
+    "location": "Jakarta, Indonesia",
+    "category": "Web",
+    "description": "File Inventory Management Project has streamlined the process of managing digital files within the organization. Users can easily locate and share files, reducing time spent searching for documents and enhancing overall productivity. The system promotes better organization and accessibility of information, leading to improved workflow efficiency."
+  },
+  {
+    "id": 13,
+    "image": "/assets/coco.png",
+    "title": "Budget Planning BT Cocoa",
+    "location": "Jakarta, Indonesia",
+    "category": "Software Testing",
+    "description": "Budget Planning Project has enabled PT. Bumi Tangerang Mesindotama (BTCOCOA) to enhance its financial management processes significantly. Departments can now create and manage budgets more effectively, leading to improved financial discipline and accountability. The reporting tools provide valuable insights, allowing management to make informed decisions based on real-time data."
+  },
+  {
+    "id": 14,
+    "image": "/assets/sftp.jpeg",
+    "title": "Automation of file download",
+    "location": "Jakarta, Indonesia",
+    "category": "Web",
+    "description": "Automation of file downloads and transfers via SFTP has greatly improved operational efficiency for the organization. By minimizing time spent on manual file management, employees can focus on more strategic tasks. Strong error handling and logging mechanisms also enhance the reliability of the process, ensuring that critical files are transferred securely and accurately."
+  }
 ]

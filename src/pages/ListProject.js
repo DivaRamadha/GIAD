@@ -87,27 +87,5 @@ const ListProject = () => {
   );
 };
 
-// {
-//     "id": 0,
-//     "image": "/assets/ahchat.png",
-//     "title": "AhaChat",
-//     "location": "Vietnam",
-//     "category": "Mobile",
-//     "description": "Nabila is a mobile app that has been downloaded by more than 10,000 users, with a rating of 4.7 out of 5 stars from over 4,000 users. The app is designed to provide a convenient and user-friendly experience for its customers. With its clean and modern design, Nabila is perfect for anyone looking for a reliable and efficient way to manage their daily activities."
-// },
-// {
-//     "id": 12,
-//     "image": "https://picsum.photos/200/301",
-//     "title": "File Inventory Management",
-//     "location": "Jakarta, Indonesia",
-//     "description": "Project from PT Primamitra Langgeng Sejahtera."
-// },
-// {
-//     "id": 13,
-//     "image": "https://picsum.photos/200/301",
-//     "title": "Budget Planning BT Cocoa",
-//     "location": "Jakarta, Indonesia",
-//     "description": "Project from PT Olam Indonesia"
-// }
 
 export default ListProject;
